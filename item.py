@@ -25,13 +25,11 @@ class Item():
 
 	def deliver(self):
 		self.delivered = True
-		print(self.delivered)
 
 	def get_name(self):
 		return self.child
 
 	def stringified(self):
-		print(self.delivered)
 		if(self.delivered):
 			return f'{self.child} has received: {str(self.toys)}'
 		else:
